@@ -11,26 +11,26 @@ const clients = [
 
 export default function Clients() {
   return (
-    <section id="clients" className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12 md:mb-16">
+    <section id="clients" className="py-16 md:py-24 bg-gray-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-12 md:mb-16">
           Client List
         </h2>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center md:text-left mb-8">
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Customers</h3>
-            <p className="text-gray-600">Our customers in the past and present include</p>
+        <div className="max-w-2xl mx-auto">
+          <div className="mb-6">
+            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1">Customers</h3>
+            <p className="text-gray-500 text-sm">Our customers in the past and present include</p>
           </div>
 
-          <div className="space-y-0">
+          <div className="border-t border-gray-200">
             {clients.map((client) => (
               <div
                 key={client.name}
-                className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-4 border-b border-gray-200 gap-1 sm:gap-4"
+                className="flex justify-between items-center py-3 border-b border-gray-200"
               >
-                <h4 className="text-base sm:text-lg font-medium text-gray-900">{client.name}</h4>
-                <p className="text-sm sm:text-base text-gray-500">{client.location}</p>
+                <span className="text-sm md:text-base text-gray-900">{client.name}</span>
+                <span className="text-sm text-gray-500">{client.location}</span>
               </div>
             ))}
           </div>

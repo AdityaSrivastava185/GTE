@@ -1,47 +1,60 @@
 "use client"
 
-import { useState } from "react"
-
 export default function Contact() {
-  const [isOpen, setIsOpen] = useState(false)
-
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-gray-600 mb-4 text-sm sm:text-base">
+    <section id="contact" className="py-16 md:py-24 bg-[#1a1f36] text-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="text-center text-white/70 mb-2 text-sm">
           We export to the USA, UK, Australia and Europe
         </p>
 
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12 md:mb-16">
-          Contact Us
+        <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-12 md:mb-16">
+          Get in Touch
         </h2>
 
-        <div className="max-w-xl mx-auto text-center">
-          <div className="mb-10">
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">GlobeTech Exports</h3>
-            <p className="text-gray-600 mb-4 leading-relaxed text-sm sm:text-base">
-              186A, Arjun Nagar, Safdarjung Enclave, New Delhi, Delhi, India
-            </p>
-            <p className="text-gray-600 mb-3 text-sm sm:text-base">+91-9810005024</p>
+        <div className="max-w-md mx-auto text-center">
+          <h3 className="text-lg md:text-xl font-semibold text-white mb-4">GlobeTech Exports</h3>
+          <p className="text-white/70 mb-2 text-sm leading-relaxed">
+            186A, Arjun Nagar, Safdarjung Enclave,
+            <br />
+            New Delhi, Delhi, India
+          </p>
+          <p className="text-white/70 mb-6 text-sm">+91-9810005024</p>
+
+          {/* Social Icons */}
+          <div className="flex justify-center gap-4 mb-8">
+            <a
+              href="#"
+              className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+            >
+              <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a
+              href="#"
+              className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
+            >
+              <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
             <a
               href="mailto:charanjit@gtexports.com"
-              className="text-gray-600 hover:text-gray-900 transition-colors text-sm sm:text-base"
+              className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
             >
-              charanjit@gtexports.com
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
             </a>
           </div>
 
-          <div>
-            <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-4">Hours</h4>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors text-sm sm:text-base"
-            >
-              <span>Today</span>
-              <span className="text-gray-500">Closed</span>
-              <span className={`transform transition-transform ${isOpen ? "rotate-180" : ""}`}>▼</span>
-            </button>
-          </div>
+          <a
+            href="mailto:charanjit@gtexports.com"
+            className="text-white/90 hover:text-white text-sm transition-colors"
+          >
+            charanjit@gtexports.com
+          </a>
         </div>
       </div>
     </section>
