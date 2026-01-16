@@ -29,8 +29,8 @@ export default function Hero() {
         </h1>
       </div>
 
-      {/* View Products button - centered */}
-      <div className="relative z-10 flex justify-center pb-12">
+      {/* View Products button and Email - centered */}
+      <div className="relative z-10 flex flex-col items-center gap-6 pb-12">
         <Link
           href="/products"
           className="inline-flex items-center gap-2 border border-white/40 text-white/90 px-5 py-2.5 text-sm hover:bg-white/10 transition-colors"
@@ -40,6 +40,12 @@ export default function Hero() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </Link>
+        <a
+          href="mailto:charanjit@gtexports.com"
+          className="text-white/90 text-sm md:text-base hover:text-white transition-colors"
+        >
+          charanjit@gtexports.com
+        </a>
       </div>
     </section>
   )

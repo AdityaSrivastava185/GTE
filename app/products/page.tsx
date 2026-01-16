@@ -19,22 +19,22 @@ const products = [
   {
     category: "FABRICATED RAILCAR PARTS",
     name: "FABRICATED RAILCAR PARTS",
+    image: "/fabricated-railcar-part-05.png",
+  },
+  {
+    category: "FABRICATED RAILCAR PARTS",
+    name: "FABRICATED RAILCAR PARTS",
     image: "/fabricated-railcar-parts.png",
   },
   {
     category: "FABRICATED RAILCAR PARTS",
     name: "FABRICATED RAILCAR PARTS",
-    image: "/fabricated-railcart-parts.png",
+    image: "/fabricated-railcar-part-04.png",
   },
   {
     category: "FABRICATED RAILCAR PARTS",
     name: "FABRICATED RAILCAR PARTS",
-    image: "/fabricated-railcart-parts.png",
-  },
-  {
-    category: "FABRICATED RAILCAR PARTS",
-    name: "FABRICATED RAILCAR PARTS",
-    image: "/fabricated-railcart-parts.png",
+    image: "/fabricated-railcar-part-02.png",
   },
   {
     category: "FABRICATED TRAILER PARTS",
@@ -110,11 +110,11 @@ export default function ProductsPage() {
           {products.map((product, index) => (
             <div key={index} className="group">
               {/* Single Image */}
-              <div className="bg-gray-100 aspect-square mb-3 overflow-hidden">
+              <div className="bg-gray-100 aspect-square mb-3 overflow-hidden flex items-center justify-center p-2">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
 

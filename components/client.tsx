@@ -7,6 +7,8 @@ const clients = [
   { name: "Unipart Eberspacher Exhaust Systems Ltd", location: "UK" },
   { name: "Jim Lawrence Traditional Ironwork", location: "UK" },
   { name: "Teleflex Morse Ltd", location: "UK" },
+  { name: "TJM Products Pty Ltd", location: "Australia" },
+  { name: "Ferra Engineering", location: "Australia" },
 ]
 
 export default function Clients() {

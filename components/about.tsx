@@ -2,6 +2,11 @@ export default function About() {
   return (
     <section id="about" className="py-16 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Heading */}
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12 md:mb-16">
+          About GlobeTech Exports: Innovating Manufacturing
+        </h2>
+
         {/* Our Mission Section */}
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center mb-20 md:mb-28">
           <div className="flex justify-center">
