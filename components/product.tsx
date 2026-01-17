@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Link from "next/link"
 import React from "react"
 
 const products = [
@@ -72,6 +73,19 @@ export default function Products() {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="flex justify-center mt-8">
+          <Link
+            href="/products"
+            className="inline-flex items-center gap-3 bg-gray-900 text-white font-medium px-8 py-3.5 text-sm md:text-base rounded-full hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+          >
+            View All Products
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
         </div>
       </div>
     </section>
